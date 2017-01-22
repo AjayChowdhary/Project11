@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mywall"
+    android:padding="10dp"
+    tools:context=".Menu" >
+
+    <SearchView
+        android:id="@+id/searchView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:onClick="songlistfunc" >
+
+    </SearchView>
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/searchView1"
+        android:layout_marginTop="45dp" >
+
+        <ImageView
+            android:id="@+id/songlis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="songl"
+            android:paddingBottom="20dp"
+            android:src="@drawable/menuopticon" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:text="SONGLIST" 
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/searchView1"
+        android:layout_marginTop="45dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:text="PLAYLIST" 
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/playlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="playl"
+            android:paddingBottom="20dp"
+            android:src="@drawable/menuopticon" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/frameLayout1"
+        android:layout_marginTop="28dp" >
+
+        <ImageView
+            android:id="@+id/mainpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="mainp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/menuopticon" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+           android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="MAINPAGE" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/frameLayout2" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="FAVOURITES" />
+
+        <ImageView
+            android:id="@+id/fav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="favf"
+            android:paddingBottom="20dp"
+            android:src="@drawable/menuopticon" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/so"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/darker_gray" 
+        android:text="FAVOURITES" />
+
+</RelativeLayout>
